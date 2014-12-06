@@ -59,19 +59,49 @@ table {
   border-spacing: 0;
 }
 
-/* line 14, ../sass/style.scss */
-body {
-  font-family: "Roboto", sans-serif;
+/* line 13, ../sass/style.scss */
+html, body {
+  height: 100%;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+/* line 21, ../sass/style.scss */
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  height: 100%;
   width: 100%;
 }
 
-/* line 24, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
+.video-wrapper {
+  height: 0;
+  margin: 0 auto;
+  padding-bottom: 56.25%;
+  /* 16:9 ratio */
+  position: relative;
+}
+
+/* line 35, ../sass/style.scss */
+.video-stretch {
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+/* line 42, ../sass/style.scss */
+.video-stretch iframe {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 48, ../sass/style.scss */
 nav {
   background: blue;
   height: 40px;
@@ -81,60 +111,61 @@ nav {
   z-index: 1;
   opacity: .85;
 }
-/* line 36, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 nav ul li {
   display: inline;
   line-height: 40px;
 }
-/* line 40, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 nav ul li a {
-  text-transform: uppercase;
-  text-decoration: none;
   color: white;
-  width: 150px;
+  display: inline-block;
   font-size: 14px;
   font-weight: 400;
-  display: inline-block;
-  text-align: center;
   height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 12%;
 }
-/* line 51, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 section {
   padding: 75px 0;
+  min-height: 100%;
 }
-/* line 63, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 section h2 {
   font-size: 40px;
   margin: 20px 0;
 }
-/* line 68, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 section h3 {
   font-size: 30px;
   margin: 20px 0;
 }
-/* line 73, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 section h4 {
   font-size: 25px;
   margin: 10px 0;
 }
-/* line 78, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 section blockquote {
-  margin: 10px 20px;
+  margin: 1%;
   background: #FFFFFF;
-  padding: 20px;
-  width: 500px;
-  float: left;
-  line-height: 1.5em;
+  display: inline-block;
+  padding: 2%;
+  vertical-align: top;
+  width: 43.8%;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.75);
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 89, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 h1 {
   font-family: "Nova Square", serif;
   font-size: 125px;
@@ -144,33 +175,36 @@ h1 {
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
-/* line 96, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 h1 + h2 {
   padding-top: 125px;
   text-align: right;
 }
 
-/* line 102, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .topBtn, .nextBtn {
   position: fixed;
-  bottom: 30px;
-  z-index: 100;
-  font-size: 30px;
-  padding: 8px 15px;
+  -webkit-border-radius: 50%;
+  background: #FFFFFF;
   -webkit-border-radius: 50%;
           border-radius: 50%;
+  bottom: 30px;
   color: #000000;
-  background: #FFFFFF;
+  font-size: 30px;
+  height: 50px;
+  text-align: center;
+  width: 50px;
+  z-index: 100;
   -webkit-box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.75);
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 114, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .topBtn {
   right: 30px;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 .nextBtn {
   right: 110px;
 }
