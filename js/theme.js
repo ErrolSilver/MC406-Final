@@ -66,8 +66,8 @@
 
       console.log(i);
 
-      //var elemID = $sectionIDs[i],
-      var elemID = 'finContain',
+      var elemID = $sectionIDs[i],
+      //var elemID = 'finContain',
         scrollElem = $('#' + elemID);
 
       i++;
