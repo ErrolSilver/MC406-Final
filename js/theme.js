@@ -5,35 +5,60 @@
     $navBar = $('#primary-nav'),
     $navLinks = $('#primary-nav').find('a'),
     $sections = $('.content-section'),
+    $sectionIDs = [],
     i = 0;
+
+    $sections.each(function() {
+      $sectionIDs.push($(this).attr('id'));
+    });
 
     $navLinks.click(function(event) {
       /* Act on the event */
       var link = $(this).attr('href'),
-        section = $(link);
+        section = $(link),
+        i = 0;
 
-
-      scrollToElement(section, 750, $navBar.outerHeight());
+      scrollToElement(section, 750, $navBar.outerHeight() - 10);
       event.preventDefault();
     });
 
     $upBtn.click(function(event) {
       /* Act on the event */
-      var $scrollElem = $sections[i];
-      console.log($scrollElem);
+      /*
+      if (i < 0) {
+        i = 0;
+      }  
+      --i;
+      console.log(i);
+      
+      var elemID = $sectionIDs[i],
+        scrollElem = $('#' + elemID);
+        if (i < 0) {
+          i = 0;
+        }  
+        console.log(scrollElem);  */
 
-      i--;
+      i = 0;
+      scrollToElement($('.container'), 750, $navBar.outerHeight() - 10);
+
       console.log('Up button clicked');
       event.preventDefault();
     });
 
     $downBtn.click(function(event) {
       /* Act on the event */
-      var $scrollElem = $sections[i];
-      console.log($scrollElem);
+      if (i > $sections.length) {
+        i = $sections.length;
+      } 
 
-      scrollToElement($scrollElem, 750, $navBar.outerHeight());
+      console.log(i);
+
+      var elemID = $sectionIDs[i],
+        scrollElem = $('#' + elemID);
+
       i++;
+      scrollToElement(scrollElem, 750, $navBar.outerHeight() - 10);
+
       console.log('Down button clicked');
       event.preventDefault();
     });
