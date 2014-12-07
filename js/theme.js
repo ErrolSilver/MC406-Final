@@ -41,6 +41,19 @@
       i = 0;
       scrollToElement($('.container'), 750, -$navBar.outerHeight());
 
+      $upBtn.velocity({
+        right: 30,
+        bottom: 30
+      }, 1000);
+
+      $downBtn.velocity({
+        opacity: 1
+      }, 1000);
+
+      $navBar.velocity({
+        height: 40
+      }, 1000);
+
       console.log('Up button clicked');
       event.preventDefault();
     });
@@ -53,14 +66,38 @@
 
       console.log(i);
 
-      var elemID = $sectionIDs[i],
+      //var elemID = $sectionIDs[i],
+      var elemID = 'finContain',
         scrollElem = $('#' + elemID);
 
       i++;
-      scrollToElement(scrollElem, 750, -$navBar.outerHeight());
 
       console.log('Down button clicked');
       event.preventDefault();
+
+
+      if (elemID == 'finContain') {
+        scrollToElement(scrollElem, 750, 0);
+        setTimeout(function() {
+          $navBar.velocity({
+            height: 0
+          }, 1000);
+
+          $downBtn.velocity({
+            opacity: 0
+          }, 1000);
+
+
+          $upBtn.velocity({
+            right: 47.95 + '%',
+            bottom: 45 + '%'
+          }, 1000);
+
+
+        }, 1000);
+      } else {
+        scrollToElement(scrollElem, 750, -$navBar.outerHeight());
+      }
     });
 
     $(window).scroll(function() {

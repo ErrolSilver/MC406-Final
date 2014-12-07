@@ -60,14 +60,47 @@ p+p {
   border-bottom: 1px solid black;
 }
 
+.fin-contain {
+  display: flex;
+  position: relative;
+  font-size: 250%;
+  padding-bottom: 6em;
+
+  .fin {
+    font-family: serif;
+    margin: auto;
+    text-transform: capitalize;
+  }
+
+  .fin:before {
+    content: '~';
+    margin-right: .5em;
+  }
+
+  .fin:after {
+    content: '~';
+    margin-left: .5em;
+  }
+
+  .fin-drop {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+}
+
+#conclusion {
+  border: 0;
+}
+
 nav {
     background: $secondaryColor;
     height: 40px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
     opacity: .85;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
         
     ul {
 

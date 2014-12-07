@@ -121,21 +121,59 @@ p + p {
 }
 
 /* line 63, ../sass/style.scss */
+.fin-contain {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-size: 250%;
+  padding-bottom: 6em;
+}
+/* line 69, ../sass/style.scss */
+.fin-contain .fin {
+  font-family: serif;
+  margin: auto;
+  text-transform: capitalize;
+}
+/* line 75, ../sass/style.scss */
+.fin-contain .fin:before {
+  content: '~';
+  margin-right: .5em;
+}
+/* line 80, ../sass/style.scss */
+.fin-contain .fin:after {
+  content: '~';
+  margin-left: .5em;
+}
+/* line 85, ../sass/style.scss */
+.fin-contain .fin-drop {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* line 91, ../sass/style.scss */
+#conclusion {
+  border: 0;
+}
+
+/* line 95, ../sass/style.scss */
 nav {
   background: blue;
   height: 40px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1;
   opacity: .85;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
-/* line 75, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 nav ul li {
   display: inline;
   line-height: 40px;
 }
-/* line 79, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 nav ul li a {
   color: white;
   display: inline-block;
@@ -147,32 +185,32 @@ nav ul li a {
   text-transform: uppercase;
   width: 12%;
 }
-/* line 90, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 99, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 section {
   padding: 1em 0;
   min-height: 100%;
 }
-/* line 103, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 section h2 {
   font-size: 40px;
   margin: 20px 0;
 }
-/* line 108, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 section h3 {
   font-size: 30px;
   margin: 20px 0;
 }
-/* line 113, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 section h4 {
   font-size: 25px;
   margin: 10px 0;
 }
-/* line 118, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 section blockquote {
   background: #FFFFFF;
   display: inline-block;
@@ -184,7 +222,7 @@ section blockquote {
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 129, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 h1 {
   font-family: "Nova Square", serif;
   font-size: 125px;
@@ -194,13 +232,13 @@ h1 {
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
-/* line 136, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 h1 + h2 {
   padding-top: 125px;
   text-align: right;
 }
 
-/* line 142, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .topBtn, .nextBtn {
   position: fixed;
   -webkit-border-radius: 50%;
@@ -218,12 +256,12 @@ h1 + h2 {
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 157, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .topBtn {
   right: 30px;
 }
 
-/* line 161, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .nextBtn {
   right: 110px;
 }
