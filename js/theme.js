@@ -65,10 +65,13 @@
 
     $(window).scroll(function() {
       var scrolled = $(window).scrollTop();
-      console.log(scrolled);
-      $('body').css({
-        'background-position': '0%' + -scrolled/15 + '%',
-      });  
+
+
+      onResize(function () {
+        $('body').css({
+          'background-position': '0%' + -scrolled/15 + '%',
+        });  
+       }, 10, 'scroll-delay');
     });
 
 
@@ -83,4 +86,17 @@
       offset: offset 
     });
   }
+
+  var onResize = (function () {
+    var timers = {};
+    return function (callback, ms, uniqueId) {
+      if (!uniqueId) {
+        uniqueId = "ID already in use";
+      }
+      if (timers[uniqueId]) {
+        clearTimeout(timers[uniqueId]);
+      }
+      timers[uniqueId] = setTimeout(callback, ms);
+    };
+  })();
 })(jQuery);
