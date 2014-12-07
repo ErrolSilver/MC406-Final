@@ -18,7 +18,7 @@
         section = $(link),
         i = 0;
 
-      scrollToElement(section, 750, $navBar.outerHeight() - 10);
+      scrollToElement(section, 750, -$navBar.outerHeight());
       event.preventDefault();
     });
 
@@ -39,7 +39,7 @@
         console.log(scrollElem);  */
 
       i = 0;
-      scrollToElement($('.container'), 750, $navBar.outerHeight() - 10);
+      scrollToElement($('.container'), 750, -$navBar.outerHeight());
 
       console.log('Up button clicked');
       event.preventDefault();
@@ -57,10 +57,18 @@
         scrollElem = $('#' + elemID);
 
       i++;
-      scrollToElement(scrollElem, 750, $navBar.outerHeight() - 10);
+      scrollToElement(scrollElem, 750, -$navBar.outerHeight());
 
       console.log('Down button clicked');
       event.preventDefault();
+    });
+
+    $(window).scroll(function() {
+      var scrolled = $(window).scrollTop();
+      console.log(scrolled);
+      $('body').css({
+        'background-position': '0%' + -scrolled/15 + '%',
+      });  
     });
 
 
@@ -75,16 +83,4 @@
       offset: offset 
     });
   }
-
-  /* starting to write a parralax function but want
-   * make sure that we are actually going to use it
-
-  function parralax(element, speed) {
-    $('*[class^="prlx"]').each(function(r){
-      var pos = $(this).offset().top;
-      var scrolled = $(window).scrollTop();
-      $('*[class^="prlx"]').css('top', -(scrolled * 0.2) + 'px');         
-    });
-  }
-  */
 })(jQuery);

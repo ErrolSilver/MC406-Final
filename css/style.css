@@ -59,26 +59,40 @@ table {
   border-spacing: 0;
 }
 
-/* line 13, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 18, ../sass/style.scss */
 html, body {
   height: 100%;
 }
 
-/* line 16, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
+  background: url("../images/white_wall_hash.png") top left repeat;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
+p + p {
+  margin-bottom: 1em;
+}
+
+/* line 31, ../sass/style.scss */
 .container {
+  height: 100%;
   margin: 0 auto;
   max-width: 1200px;
-  height: 100%;
+  padding: 0 2.5%;
   width: 100%;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .video-wrapper {
   height: 0;
   margin: 0 auto;
@@ -87,7 +101,7 @@ body {
   position: relative;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 .video-stretch {
   height: 100%;
   left: 0px;
@@ -95,13 +109,18 @@ body {
   top: 0px;
   width: 100%;
 }
-/* line 42, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .video-stretch iframe {
   height: 100%;
   width: 100%;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
+.content-section {
+  border-bottom: 1px solid black;
+}
+
+/* line 63, ../sass/style.scss */
 nav {
   background: blue;
   height: 40px;
@@ -111,12 +130,12 @@ nav {
   z-index: 1;
   opacity: .85;
 }
-/* line 60, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 nav ul li {
   display: inline;
   line-height: 40px;
 }
-/* line 64, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 nav ul li a {
   color: white;
   display: inline-block;
@@ -128,44 +147,44 @@ nav ul li a {
   text-transform: uppercase;
   width: 12%;
 }
-/* line 75, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 section {
-  padding: 75px 0;
+  padding: 1em 0;
   min-height: 100%;
 }
-/* line 88, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 section h2 {
   font-size: 40px;
   margin: 20px 0;
 }
-/* line 93, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 section h3 {
   font-size: 30px;
   margin: 20px 0;
 }
-/* line 98, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 section h4 {
   font-size: 25px;
   margin: 10px 0;
 }
-/* line 103, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 section blockquote {
-  margin: 1%;
   background: #FFFFFF;
   display: inline-block;
   padding: 2%;
   vertical-align: top;
-  width: 43.8%;
+  margin: 1.5%;
+  width: 46%;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.75);
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 114, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 h1 {
   font-family: "Nova Square", serif;
   font-size: 125px;
@@ -175,13 +194,13 @@ h1 {
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
-/* line 121, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 h1 + h2 {
   padding-top: 125px;
   text-align: right;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .topBtn, .nextBtn {
   position: fixed;
   -webkit-border-radius: 50%;
@@ -199,12 +218,12 @@ h1 + h2 {
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 142, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .topBtn {
   right: 30px;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .nextBtn {
   right: 110px;
 }
