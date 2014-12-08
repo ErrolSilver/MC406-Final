@@ -157,7 +157,12 @@ p + p {
   border: 0;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
+#graphic img {
+  width: 100%;
+}
+
+/* line 102, ../sass/style.scss */
 nav {
   background: blue;
   height: 40px;
@@ -168,12 +173,12 @@ nav {
   width: 100%;
   z-index: 1;
 }
-/* line 108, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 nav ul li {
   display: inline;
   line-height: 40px;
 }
-/* line 112, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 nav ul li a {
   color: white;
   display: inline-block;
@@ -185,32 +190,32 @@ nav ul li a {
   text-transform: uppercase;
   width: 12%;
 }
-/* line 123, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 section {
   padding: 1em 0;
   min-height: 100%;
 }
-/* line 136, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 section h2 {
   font-size: 40px;
   margin: 20px 0;
 }
-/* line 141, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 section h3 {
   font-size: 30px;
   margin: 20px 0;
 }
-/* line 146, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 section h4 {
   font-size: 25px;
   margin: 10px 0;
 }
-/* line 151, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 section blockquote {
   background: #FFFFFF;
   display: inline-block;
@@ -222,7 +227,7 @@ section blockquote {
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 162, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 h1 {
   font-family: "Nova Square", serif;
   font-size: 125px;
@@ -232,13 +237,13 @@ h1 {
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
-/* line 169, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 h1 + h2 {
   padding-top: 125px;
   text-align: right;
 }
 
-/* line 175, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .topBtn, .nextBtn {
   position: fixed;
   -webkit-border-radius: 50%;
@@ -256,12 +261,12 @@ h1 + h2 {
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 190, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .topBtn {
   right: 30px;
 }
 
-/* line 194, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .nextBtn {
   right: 110px;
 }

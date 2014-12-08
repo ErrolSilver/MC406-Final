@@ -92,6 +92,13 @@ p+p {
   border: 0;
 }
 
+#graphic {
+
+  img {
+    width: 100%;
+  }
+}
+
 nav {
     background: $secondaryColor;
     height: 40px;
