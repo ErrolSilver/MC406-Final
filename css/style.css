@@ -84,6 +84,12 @@ p + p {
 }
 
 /* line 31, ../sass/style.scss */
+ul {
+  list-style-type: disc;
+  margin: 0 1em;
+}
+
+/* line 36, ../sass/style.scss */
 .container {
   height: 100%;
   margin: 0 auto;
@@ -92,7 +98,7 @@ p + p {
   width: 100%;
 }
 
-/* line 39, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 .video-wrapper {
   height: 0;
   margin: 0 auto;
@@ -101,7 +107,7 @@ p + p {
   position: relative;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .video-stretch {
   height: 100%;
   left: 0px;
@@ -109,18 +115,18 @@ p + p {
   top: 0px;
   width: 100%;
 }
-/* line 53, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .video-stretch iframe {
   height: 100%;
   width: 100%;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .content-section {
   border-bottom: 1px solid black;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .fin-contain {
   display: -webkit-box;
   display: -webkit-flex;
@@ -130,39 +136,39 @@ p + p {
   font-size: 250%;
   padding-bottom: 6em;
 }
-/* line 69, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .fin-contain .fin {
   font-family: serif;
   margin: auto;
   text-transform: capitalize;
 }
-/* line 75, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .fin-contain .fin:before {
   content: '~';
   margin-right: .5em;
 }
-/* line 80, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .fin-contain .fin:after {
   content: '~';
   margin-left: .5em;
 }
-/* line 85, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .fin-contain .fin-drop {
   font-size: 1.2em;
   font-weight: bold;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 #conclusion {
   border: 0;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 #graphic img {
   width: 100%;
 }
 
-/* line 102, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 nav {
   background: blue;
   height: 40px;
@@ -173,12 +179,12 @@ nav {
   width: 100%;
   z-index: 1;
 }
-/* line 115, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 nav ul li {
   display: inline;
   line-height: 40px;
 }
-/* line 119, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 nav ul li a {
   color: white;
   display: inline-block;
@@ -190,32 +196,32 @@ nav ul li a {
   text-transform: uppercase;
   width: 12%;
 }
-/* line 130, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 139, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 section {
   padding: 1em 0;
   min-height: 100%;
 }
-/* line 143, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 section h2 {
   font-size: 40px;
   margin: 20px 0;
 }
-/* line 148, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 section h3 {
   font-size: 30px;
   margin: 20px 0;
 }
-/* line 153, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 section h4 {
   font-size: 25px;
   margin: 10px 0;
 }
-/* line 158, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 section blockquote {
   background: #FFFFFF;
   display: inline-block;
@@ -227,7 +233,7 @@ section blockquote {
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 169, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 h1 {
   font-family: "Nova Square", serif;
   font-size: 125px;
@@ -237,13 +243,13 @@ h1 {
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
-/* line 176, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 h1 + h2 {
   padding-top: 125px;
   text-align: right;
 }
 
-/* line 182, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .topBtn, .nextBtn {
   position: fixed;
   -webkit-border-radius: 50%;
@@ -261,12 +267,12 @@ h1 + h2 {
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 197, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .topBtn {
   right: 30px;
 }
 
-/* line 201, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .nextBtn {
   right: 110px;
 }
