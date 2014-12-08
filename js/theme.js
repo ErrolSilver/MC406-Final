@@ -23,21 +23,6 @@
     });
 
     $upBtn.click(function(event) {
-      /* Act on the event */
-      /*
-      if (i < 0) {
-        i = 0;
-      }  
-      --i;
-      console.log(i);
-      
-      var elemID = $sectionIDs[i],
-        scrollElem = $('#' + elemID);
-        if (i < 0) {
-          i = 0;
-        }  
-        console.log(scrollElem);  */
-
       i = 0;
       scrollToElement($('.container'), 750, -$navBar.outerHeight());
 
