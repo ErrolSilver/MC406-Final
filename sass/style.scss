@@ -127,11 +127,14 @@ nav {
     z-index: 1;
         
     ul {
-
+      list-style-type: none;
+      height: 100%;
 
         li {
-            display: inline;
+            display: inline-block;
             line-height: 40px;
+            width: 14%;
+            float: left;
 
             a {
                 color: $primaryColor;
@@ -142,7 +145,7 @@ nav {
                 text-align: center;
                 text-decoration: none;
                 text-transform: uppercase;
-                width: 12%;
+                width: 100%;
 
                 &:hover {
                     text-decoration: underline;
