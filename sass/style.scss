@@ -1,7 +1,7 @@
 @import "reset";
 
 $primaryColor: #FFFFFF;
-$secondaryColor: #0000FF;
+$secondaryColor: #8cc63f;
 $sansFont: "Roboto", sans-serif;
 $serifFont: "Nova Square", serif;
 
@@ -130,6 +130,7 @@ ul {
 
 nav {
     background: $secondaryColor;
+    border-bottom: 1px solid white;
     height: 40px;
     opacity: .85;
     overflow: hidden;

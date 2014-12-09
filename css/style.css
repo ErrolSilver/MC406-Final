@@ -199,7 +199,8 @@ ul {
 
 /* line 131, ../sass/style.scss */
 nav {
-  background: blue;
+  background: #8cc63f;
+  border-bottom: 1px solid white;
   height: 40px;
   opacity: .85;
   overflow: hidden;
@@ -208,19 +209,19 @@ nav {
   width: 100%;
   z-index: 1;
 }
-/* line 141, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 nav ul {
   list-style-type: none;
   height: 100%;
 }
-/* line 145, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 nav ul li {
   display: inline-block;
   line-height: 40px;
   width: 14%;
   float: left;
 }
-/* line 151, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 nav ul li a {
   color: white;
   display: inline-block;
@@ -232,32 +233,32 @@ nav ul li a {
   text-transform: uppercase;
   width: 100%;
 }
-/* line 162, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* line 171, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 section {
   padding: 1em 0;
   min-height: 100%;
 }
-/* line 175, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 section h2 {
   font-size: 40px;
   margin: 20px 0;
 }
-/* line 180, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 section h3 {
   font-size: 30px;
   margin: 20px 0;
 }
-/* line 185, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 section h4 {
   font-size: 25px;
   margin: 10px 0;
 }
-/* line 190, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 section blockquote {
   background: #FFFFFF;
   display: inline-block;
@@ -269,7 +270,7 @@ section blockquote {
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 201, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 h1 {
   font-family: "Nova Square", serif;
   font-size: 125px;
@@ -279,13 +280,13 @@ h1 {
       -ms-transform: rotate(-10deg);
           transform: rotate(-10deg);
 }
-/* line 208, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 h1 + h2 {
   padding-top: 125px;
   text-align: right;
 }
 
-/* line 214, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .topBtn, .nextBtn {
   position: fixed;
   -webkit-border-radius: 50%;
@@ -303,12 +304,12 @@ h1 + h2 {
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* line 229, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .topBtn {
   right: 30px;
 }
 
-/* line 233, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .nextBtn {
   right: 110px;
 }
