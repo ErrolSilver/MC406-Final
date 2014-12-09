@@ -24,6 +24,18 @@ body {
     background: url('../images/white_wall_hash.png') top left repeat;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6, {
+  color: #8cc63f;
+}
+
+h1+h2 {
+  color: #000;
+}
+
 p+p {
   margin-bottom: 1em;
 }
